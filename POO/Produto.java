@@ -3,8 +3,8 @@ public class Produto {
     double price; 
     int quantity;
 
-    public double ValorTotalEmEstoque {
-        
-    } 
+    public void Atualizado{
+        System.out.println("Nome: "+name+" R$: "+price+" Quantidade em estoque: "+quantity);
+    }
 
 }

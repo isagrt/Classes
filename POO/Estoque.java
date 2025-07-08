@@ -14,5 +14,7 @@ public class Estoque {
         System.out.println("Quantidade: ");
         Produto1.quantity = scanner.nextInt();
 
+        Produto.Atualizado;
+
     }
 }
