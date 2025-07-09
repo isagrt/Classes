@@ -4,12 +4,16 @@ public class Retangulo{
 
     public double area(){
         double a = base * altura;
+        return a;
     }
     public double perimetro(){
         double p = 2 * (base + altura);
+        return p;
     }
-    public double diagonal(){
-        double d;
-        Math.pow(d,2) = Math.pow(altura, 2) + Math.pow(base, 2);
-    }
+    /*public double diagonal(){
+        double d = c;
+        d = d * c;
+        d = Math.pow(altura, 2) + Math.pow(base, 2);
+
+    }*/
 }
