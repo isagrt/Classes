@@ -13,6 +13,7 @@ public class Funcionario{
         return info;
     }
     public void Aumento(double porcentagem){
-       salarioBruto += (salarioBruto * porcentagem);
+       salarioBruto = salarioBruto + (salarioBruto * porcentagem);
+       
     }
 }
