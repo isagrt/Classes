@@ -26,6 +26,9 @@ public class Estoque {
         Produto1.RemoverProdutos (scanner.nextInt());
 
         System.out.println(Produto1.Mensagem());
+        System.out.println("Total em estoque: "+Produto1.ValorTotal());
+
+        scanner.close();
 
     }
 }
