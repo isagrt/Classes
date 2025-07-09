@@ -10,10 +10,11 @@ public class Retangulo{
         double p = 2 * (base + altura);
         return p;
     }
-    /*public double diagonal(){
-        double d = c;
-        d = d * c;
+    public double diagonal(){
+        double d;
         d = Math.pow(altura, 2) + Math.pow(base, 2);
+        d = Math.sqrt(d);
+        return d;
 
-    }*/
+    }
 }

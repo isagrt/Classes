@@ -19,7 +19,8 @@ public class Calculo{
         System.out.println("Perimetro = "+perimetroRetangulo);
 
         //diagonal
-        
+        double diagonalRetangulo = retangulo.diagonal();
+        System.out.println("Diagonal = "+diagonalRetangulo);
     }
 
 }
