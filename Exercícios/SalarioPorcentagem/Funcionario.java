@@ -9,11 +9,11 @@ public class Funcionario{
     }
 
     public String Info(){
-        String info = ("Nome = "+nome+" Salario = "+(salarioBruto - taxa));
+        String info = ("Nome = "+nome+" | Salario = "+(salarioBruto - taxa));
         return info;
     }
-    public void Aumento(double porcentagem){
+    public double Aumento(double porcentagem){
        salarioBruto = salarioBruto + (salarioBruto * porcentagem);
-       
+       return porcentagem;
     }
 }

@@ -17,8 +17,9 @@ public class Salario{
 
         System.out.println(funcionario.Info());
 
-        System.out.println("Insira a porcentagewm para aumento = ");
-        funcionario.Aumento = (scanner.nextDouble());
+        System.out.println("Insira a porcentagem para o aumento = ");
+        double porcentagem = scanner.nextDouble();
+        funcionario.Aumento(porcentagem);
 
         System.out.println(funcionario.Info());
 
