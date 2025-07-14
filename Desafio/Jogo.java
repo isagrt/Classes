@@ -4,8 +4,9 @@ public class Jogo{
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         Personagem personagem = new Personagem();
-        Personagem.Narcisa narcisa = personagem.narcisa();
-        Personagem.Rita rita = personagem.rita();
+        Personagem.Narcisa narcisa = new Personagem.Narcisa();
+        Personagem.Rita rita = new Personagem.Rita();
+
 
         System.out.println("Configuração da personagem Narcisa:");
         narcisa.definirStatusInicial();

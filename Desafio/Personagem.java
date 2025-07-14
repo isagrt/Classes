@@ -1,23 +1,13 @@
 import java.util.Scanner;
 
 public class Personagem{
-    public String nome;
-    public String oponente;
-    public int nivel;
-    public int vida;
-    public int mana;
-    public int forca;
-    
-    
-        
-    
-    public class Narcisa{
+    public static class Narcisa{
         public String nome = "Narcisa";
         public String oponente = "Rita";
         public int nivel = 1;
         public int vida = 100;
-        public int mana = 70;
-        public int forca = 30;
+        public int mana;
+        public int forca;
 
 
         public void Separador(){
@@ -99,13 +89,13 @@ public class Personagem{
 
     
 
-    public class Rita{
-     public String nome = "Narcisa";
-    public String oponente = "Rita";
+    public static class Rita{
+    public String nome = "Rita";
+    public String oponente = "Narcisa";
     public int nivel = 1;
     public int vida = 100;
-    public int mana = 70;
-    public int forca = 30;
+    public int mana;
+    public int forca;
     
 
         public void Separador(){
