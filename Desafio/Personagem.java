@@ -26,6 +26,22 @@ public class Personagem{
         System.out.println("                 ");                                 
                                                                                                       
         }
+
+        public void ritaCorpo(){
+            
+                  System.out.println(
+    "                                           :&:\n" +
+    "                                   /\\_/\\    #\n" +
+    "                                 »( o.o )«O #\n" +
+    "                                   > - < O _#_\n" +
+    "                                  (     )O( # )\n" +
+    "                                   \\ │ /O / O \\\n" +
+    "                                    O O  ( === )\n" +
+    "                                          `---'\n"
+);                         
+                                                                                                      
+        }
+
        
         public void definirStatusInicial() {
         Scanner scanner = new Scanner(System.in);
