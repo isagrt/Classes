@@ -13,6 +13,18 @@
             System.out.println(" oii");
         }
 
+        public void definirStatusInicial() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Defina o nível de força para " + nome + ": ");
+        forca = scanner.nextInt();
+
+        System.out.print("Defina o nível de mana para " + nome + ": ");
+        mana = scanner.nextInt();
+
+        System.out.println("Status definidos! Força: " + forca + " | Mana: " + mana);
+        }
+
         public void AtaqueGuerreira(){
             forca += 2;
             mana += 2;
