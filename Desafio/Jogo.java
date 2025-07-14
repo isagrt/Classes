@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Jogo{
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
-        Narcisa narcisa = new Narcisa();
-        Rita rita = new Rita();
+        Personagem personagem = new Personagem();
+        Personagem.Narcisa narcisa = personagem.narcisa();
+        Personagem.Rita rita = personagem.rita();
 
         System.out.println("Configuração da personagem Narcisa:");
         narcisa.definirStatusInicial();

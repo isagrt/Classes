@@ -1,4 +1,4 @@
-    import java.util.Scanner;
+    /*import java.util.Scanner;
 
     public class Rita{
     public String nome = "Rita";
@@ -84,3 +84,4 @@
 
 
     }
+*/
