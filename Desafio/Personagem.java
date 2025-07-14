@@ -12,25 +12,35 @@ public class Personagem{
         public void Separador(){
             System.out.println("------------------------------");
         }
-        public void Historia(){
-            String desenho =                                                             
+        public void narcisaCorpo(){
+            
+           System.out.println("          X                                           ");
+        System.out.println("         / \\                                          ");
+        System.out.println("        /\\_/\\                   >> Narcisa uma gata maga,                     ");
+        System.out.println("     »( o.o )«                pronta para o ataque de seus inimigos                  ");
+        System.out.println("        > - <   oo              mais crueis!                   ");
+        System.out.println("       (  *  ) o                                     ");
+        System.out.println("        \\ | /oo                                     ");
+        System.out.println("         O O                                         ");
+        System.out.println("                                                     ");
+        System.out.println("                 ");                                 
                                                                                                       
         }
-
+       
         public void definirStatusInicial() {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Defina o nivel de forca para " + nome + ": ");
+        System.out.println(">> CONFIGURACAO DA PERSONAGEM "+nome.toUpperCase()+":");
+        System.out.print("Defina o nivel de forca para " + nome + "\nLEMBRETE!! " +nome + " eh uma " +classe.toLowerCase()+ ": ");
         forca = scanner.nextInt();
 
-        System.out.print("Defina o nivel de mana para " + nome + "\nLEMBRETE!! " +nome + " eh um" +classe+ "  : ");
+        System.out.print("Defina o nivel de mana para " + nome + "\nLEMBRETE!! " +nome + " eh uma " +classe.toLowerCase()+ ": ");
         mana = scanner.nextInt();
 
         System.out.println("Status definidos! Forca: " + forca + " | Mana: " + mana);
         }
 
 
-        public void Ataque(){
+        public void ataque(){
             forca += 2;
             mana += 2;
             System.out.println(nome+" utiliza seu cajado magico para atacar "+oponente);
@@ -52,7 +62,7 @@ public class Personagem{
         public void receberDanoEspecial(){
             if(vida > 0 ){
                 vida -= 10;
-                System.out.println(nome+" tenta desviar do golpe de guitarra de "+oponente+" e infelizmente não consegue :(  ");
+                System.out.println(nome+" tenta desviar do golpe de "+oponente+" e infelizmente não consegue :(  ");
                 System.out.println("+10 de dano :( Vida atual : "+vida);
             }
             else{

@@ -3,26 +3,43 @@ import java.util.Scanner;
 public class Jogo{
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
-        Personagem personagem = new Personagem();
-
-
-        System.out.println("Configuracao da personagem Narcisa:");
+        //DEFININDO PARAMETROS PARA A PRIMEIRA PERSONAGEM
+        Personagem narcisa = new Personagem();
+        narcisa.nome = "Narcisa";
+        narcisa.classe = "Maga";
+        narcisa.oponente = "Rita";
         narcisa.definirStatusInicial();
         narcisa.mostrarStatus();
-        //narcisa.Historia();
         narcisa.Separador();
 
-        System.out.println("Configuracao da personagem Rita:");
+        Personagem rita = new Personagem();
+        rita.nome = "Rita";
+        rita.classe ="Gurreira";
+        rita.oponente="Narcisa";
         rita.definirStatusInicial();
-        rita.mostrarStatus();
+        rita.Separador();
 
-        narcisa.Separador();
+        System.out.println(
+    "==============================================\n" +
+    "                   WAR CAT             \n" +
+    "==============================================\n" +
+    "Apos uma guerra nuclear, a humanidade foi dizimada.\n" +
+    "A Terra mergulhou em silencio por seculos...\n\n" +
+    "Dos escombros, os animais evoluiram, aprenderam a falar,\n" +
+    "andar sobre duas patas e construir novas sociedades.\n\n" +
+    "Inspirados na civilizacao humana, criaram um mundo\n" +
+    "medieval, repleto de magia, reinos e batalhas epicas.\n\n" +
+    "Lobos nobres, gatos cavaleiros, corujas sabias\n" +
+    "e outros seres agora escrevem a nova historia da Terra...\n" +
+    "Talvez repetindo os erros dos antigos senhores.\n" +
+    "=============================================="
+);
 
-        System.out.println("Apos uma guerra nuclear que dizimou a humanidade, a Terra ficou em silencio. Com o passar dos seculos, os animais, unicos sobreviventes, comecaram a evoluir!\nInfluenciados por mutacoes ou antigas forcas esquecidas, aprenderam a falar, andar sobre duas patas e formar sociedades.\nInspirando-se nos vestigios da civilizacao humana, construiram um novo mundo baseado na era medieval.\nAgora, lobos nobres, gatos cavaleiros, corujas sabias e outros animais governam reinos, travam guerras, praticam magia e escrevem sua propria historia, talvez repetindo os erros dos antigos senhores da Terra.");
         System.out.println("");
         
 
-         /*while (narcisa.vida > 0 && rita.vida > 0) {
+        while (narcisa.vida > 0 && rita.vida > 0) {
+            narcisa.narcisaCorpo();
             System.out.println("Vez " + narcisa.nome + ":");
             System.out.println("1 - Bater com cajado");
             System.out.println("2 - Usar cajado encantado");
@@ -32,13 +49,13 @@ public class Jogo{
 
         switch (escolhaCisa) {
             case 1:
-                narcisa.AtaqueMago();
-                rita.receberDanoGuerreira();
+                narcisa.ataque();
+                rita.receberDano();
                 narcisa.mostrarStatus();
                 break;
             case 2:
-                narcisa.usarFeitico();
-                rita.receberDanoGuerreiraEspecial();
+                narcisa.usarHabilidade();
+                rita.receberDanoEspecial();
                 narcisa.mostrarStatus();
                 break;
             case 3:
@@ -63,13 +80,13 @@ public class Jogo{
 
         switch (escolhaR) {
             case 1:
-                rita.AtaqueGuerreira();
-                narcisa.receberDanoMago();
+                rita.ataque();
+                narcisa.receberDano();
                 rita.mostrarStatus();
                 break;
             case 2:
-                rita.usarGuitarra();
-                narcisa.receberDanoMagoEspecial();
+                rita.usarHabilidade();
+                narcisa.receberDanoEspecial();
                 rita.mostrarStatus();
                 break;
             case 3:
@@ -81,7 +98,7 @@ public class Jogo{
         }
 
         narcisa.Separador();
-    }*/
+    }
         if(rita.vida <= 0){
             System.out.println("Parabens Narcisa, voce eh a maior feiticeira deste reino!!");
         }else{
