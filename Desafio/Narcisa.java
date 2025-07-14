@@ -13,6 +13,19 @@
             System.out.println(" Em um mundo após uma guerra nuclear, só restaram animais na terra, e como consequencia, eles aprenderam a falar, andar e agir igual humanos na idade média. ");
         }
 
+        public void definirStatusInicial() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Defina o nível de força para " + nome + ": ");
+        forca = scanner.nextInt();
+
+        System.out.print("Defina o nível de mana para " + nome + ": ");
+        mana = scanner.nextInt();
+
+        System.out.println("Status definidos! Força: " + forca + " | Mana: " + mana);
+        }
+
+
         public void AtaqueMago(){
             forca += 2;
             mana += 2;
