@@ -5,7 +5,19 @@ public class Jogo{
         Scanner scanner = new Scanner(System.in);
         Narcisa narcisa = new Narcisa();
         Rita rita = new Rita();
-        
+
+        System.out.println("Configuração da personagem Narcisa:");
+        narcisa.definirStatusInicial();
+        narcisa.mostrarStatus();
+
+        narcisa.Separador();
+
+        System.out.println("Configuração da personagem Rita:");
+        rita.definirStatusInicial();
+        rita.mostrarStatus();
+
+        narcisa.Separador();
+
         System.out.println("Após uma guerra nuclear que dizimou a humanidade, a Terra ficou em silêncio. Com o passar dos séculos, os animais, únicos sobreviventes, começaram a evoluir! Influenciados por mutações ou antigas forças esquecidas, aprenderam a falar, andar sobre duas patas e formar sociedades. Inspirando-se nos vestígios da civilização humana, construíram um novo mundo baseado na era medieval. Agora, lobos nobres, gatos cavaleiros, corujas sábias e outros animais governam reinos, travam guerras, praticam magia e escrevem sua própria história, talvez repetindo os erros dos antigos senhores da Terra.");
 
         do{
