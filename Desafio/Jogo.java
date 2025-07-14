@@ -26,4 +26,62 @@ public class Jogo{
         }
         while(narcisa.vida < 0 || rita.vida < 0);
 
+
+        /* while (narcisa.vida > 0 && rita.vida > 0) {
+    System.out.println("Turno de " + narcisa.nome + ":");
+    System.out.println("1 - Atacar");
+    System.out.println("2 - Usar Feitiço");
+    System.out.println("3 - Ver Status");
+    System.out.print("Escolha sua ação: ");
+    int escolhaN = scanner.nextInt();
+
+    switch (escolhaN) {
+        case 1:
+            narcisa.AtaqueMago();
+            rita.receberDanoGuerreira();
+            break;
+        case 2:
+            narcisa.usarFeitiço();
+            rita.receberDanoGuerreiraEspecial();
+            break;
+        case 3:
+            narcisa.mostrarStatus();
+            continue;
+        default:
+            System.out.println("Opção inválida. Turno perdido.");
+            break;
+    }
+
+    if (rita.vida <= 0) break;
+
+    narcisa.Separador();
+
+    System.out.println("Turno de " + rita.nome + ":");
+    System.out.println("1 - Atacar");
+    System.out.println("2 - Usar Habilidade");
+    System.out.println("3 - Ver Status");
+    System.out.print("Escolha sua ação: ");
+    int escolhaR = scanner.nextInt();
+
+    switch (escolhaR) {
+        case 1:
+            rita.AtaqueGuerreira();
+            narcisa.receberDanoMago();
+            break;
+        case 2:
+            rita.usarGuitarra();
+            narcisa.receberDanoMagoEspecial();
+            break;
+        case 3:
+            rita.mostrarStatus();
+            continue;
+        default:
+            System.out.println("Opção inválida. Turno perdido.");
+            break;
+    }
+
+    narcisa.Separador();
+}
+*/
+
     }}
