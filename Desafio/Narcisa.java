@@ -1,3 +1,5 @@
+    import java.util.Scanner;
+    
     public class Narcisa{
     public String nome = "Narcisa";
     public String oponente = "Rita";
@@ -5,6 +7,7 @@
     public int vida = 100;
     public int mana = 70;
     public int forca = 30;
+
 
         public void Separador(){
             System.out.println("------------------------------");
@@ -19,7 +22,7 @@
         System.out.print("Defina o nível de força para " + nome + ": ");
         forca = scanner.nextInt();
 
-        System.out.print("Defina o nível de mana para " + nome + ": ");
+        System.out.print("Defina o nível de mana para " + nome + ": LEMBRETE!!: " +nome + " é um mago : ");
         mana = scanner.nextInt();
 
         System.out.println("Status definidos! Força: " + forca + " | Mana: " + mana);
@@ -57,7 +60,7 @@
 
 
         }
-        public void usarFeitiço(){
+        public void usarFeitico(){
             forca += 4; 
             mana -= 4;
             System.out.println(nome+" lança sua mágia negra para atacar"+oponente);

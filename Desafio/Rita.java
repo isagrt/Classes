@@ -1,3 +1,5 @@
+    import java.util.Scanner;
+
     public class Rita{
     public String nome = "Rita";
     public String oponente = "Narcisa";
@@ -5,6 +7,7 @@
     public int vida = 100;
     public int mana = 70;
     public int forca = 30;
+    
 
         public void Separador(){
             System.out.println("------------------------------");
@@ -16,7 +19,7 @@
         public void definirStatusInicial() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Defina o nível de força para " + nome + ": ");
+        System.out.print("Defina o nível de força para " + nome + " \nLEMBRETE!!:" +nome+ "é um gurreiro ");
         forca = scanner.nextInt();
 
         System.out.print("Defina o nível de mana para " + nome + ": ");

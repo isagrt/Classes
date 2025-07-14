@@ -20,68 +20,64 @@ public class Jogo{
 
         System.out.println("Após uma guerra nuclear que dizimou a humanidade, a Terra ficou em silêncio. Com o passar dos séculos, os animais, únicos sobreviventes, começaram a evoluir! Influenciados por mutações ou antigas forças esquecidas, aprenderam a falar, andar sobre duas patas e formar sociedades. Inspirando-se nos vestígios da civilização humana, construíram um novo mundo baseado na era medieval. Agora, lobos nobres, gatos cavaleiros, corujas sábias e outros animais governam reinos, travam guerras, praticam magia e escrevem sua própria história, talvez repetindo os erros dos antigos senhores da Terra.");
 
-        do{
-          narcisa.AtaqueMago();
-          rita.receberDanoGuerreira();
-        }
-        while(narcisa.vida < 0 || rita.vida < 0);
 
 
-        /* while (narcisa.vida > 0 && rita.vida > 0) {
-    System.out.println("Turno de " + narcisa.nome + ":");
-    System.out.println("1 - Atacar");
-    System.out.println("2 - Usar Feitiço");
-    System.out.println("3 - Ver Status");
-    System.out.print("Escolha sua ação: ");
-    int escolhaN = scanner.nextInt();
 
-    switch (escolhaN) {
-        case 1:
-            narcisa.AtaqueMago();
-            rita.receberDanoGuerreira();
-            break;
-        case 2:
-            narcisa.usarFeitiço();
-            rita.receberDanoGuerreiraEspecial();
-            break;
-        case 3:
-            narcisa.mostrarStatus();
-            continue;
-        default:
-            System.out.println("Opção inválida. Turno perdido.");
-            break;
-    }
+         while (narcisa.vida > 0 && rita.vida > 0) {
+            System.out.println("Turno de " + narcisa.nome + ":");
+            System.out.println("1 - Atacar");
+            System.out.println("2 - Usar Feitiço");
+            System.out.println("3 - Ver Status");
+            System.out.print("Escolha sua ação: ");
+            int escolhaCisa = scanner.nextInt();
+
+        switch (escolhaCisa) {
+            case 1:
+                narcisa.AtaqueMago();
+                rita.receberDanoGuerreira();
+                break;
+            case 2:
+                narcisa.usarFeitico();
+                rita.receberDanoGuerreiraEspecial();
+                break;
+            case 3:
+                narcisa.mostrarStatus();
+                continue;
+            default:
+                System.out.println("Opção inválida. Turno perdido.");
+                break;
+                }
 
     if (rita.vida <= 0) break;
 
     narcisa.Separador();
 
-    System.out.println("Turno de " + rita.nome + ":");
-    System.out.println("1 - Atacar");
-    System.out.println("2 - Usar Habilidade");
-    System.out.println("3 - Ver Status");
-    System.out.print("Escolha sua ação: ");
-    int escolhaR = scanner.nextInt();
+        System.out.println("Vez de " + rita.nome + ":");
+        System.out.println("1 - Atacar");
+        System.out.println("2 - Usar Habilidade");
+        System.out.println("3 - Ver Status");
+        System.out.print("Escolha sua ação: ");
+        int escolhaR = scanner.nextInt();
 
-    switch (escolhaR) {
-        case 1:
-            rita.AtaqueGuerreira();
-            narcisa.receberDanoMago();
-            break;
-        case 2:
-            rita.usarGuitarra();
-            narcisa.receberDanoMagoEspecial();
-            break;
-        case 3:
-            rita.mostrarStatus();
-            continue;
-        default:
-            System.out.println("Opção inválida. Turno perdido.");
-            break;
+        switch (escolhaR) {
+            case 1:
+                rita.AtaqueGuerreira();
+                narcisa.receberDanoMago();
+                break;
+            case 2:
+                rita.usarGuitarra();
+                narcisa.receberDanoMagoEspecial();
+                break;
+            case 3:
+                rita.mostrarStatus();
+                continue;
+             default:
+                System.out.println("Opção inválida. Turno perdido.");
+                break;
+        }
+
+        narcisa.Separador();
     }
 
-    narcisa.Separador();
-}
-*/
 
-    }}
+        }}
