@@ -54,16 +54,23 @@ public class Jogo{
         switch (escolhaCisa) {
             case 1:
                 narcisa.ataque();
+                System.out.println(" ");
                 rita.receberDano(2);
+                System.out.println(" ");
                 narcisa.mostrarStatus();
                 break;
             case 2:
                 narcisa.usarHabilidade();
+                System.out.println(" ");
                 rita.receberDanoEspecial(10);
+                System.out.println(" ");
                 narcisa.mostrarStatus();
                 break;
             case 3:
                 narcisa.mostrarStatus();
+                if(narcisa.forca == 60){
+                rita.subirDeNivel();    
+                }
                 continue;
             default:
                 System.out.println("Opçao invalida. Vez de Rita.");
@@ -86,16 +93,23 @@ public class Jogo{
         switch (escolhaR) {
             case 1:
                 rita.ataque();
+                System.out.println(" ");
                 narcisa.receberDano(2);
+                System.out.println(" ");
                 rita.mostrarStatus();
                 break;
             case 2:
                 rita.usarHabilidade();
+                System.out.println(" ");
                 narcisa.receberDanoEspecial(10);
+                System.out.println(" ");
                 rita.mostrarStatus();
                 break;
             case 3:
                 rita.mostrarStatus();
+                if(rita.forca == 65){
+                rita.subirDeNivel();    
+                }
                 continue;
              default:
                 System.out.println("Opcao invalida. Vez de Narcisa");

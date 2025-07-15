@@ -48,8 +48,8 @@ public class Personagem{
         System.out.println(">> CONFIGURACAO DA PERSONAGEM "+nome.toUpperCase()+":");
         System.out.print("Defina o nivel de forca para " + nome + "\nLEMBRETE!! " +nome + " eh uma " +classe.toLowerCase()+ ": ");
         forca = scanner.nextInt();
-        //definindo mana só para magos
-        if (classe.equals("Maga")){    
+        
+        if (classe.equals("Maga")){  //definindo mana só para magos  
         System.out.print("Defina o nivel de mana para " + nome + "\nLEMBRETE!! " +nome + " eh uma " +classe.toLowerCase()+ ": ");
         mana = scanner.nextInt();   
         System.out.println("Status definidos! Forca: " + forca + " | Mana: " +mana);}
@@ -102,7 +102,6 @@ public class Personagem{
             
         }
         public void subirDeNivel(){
-            if(forca == 60){
                 if (classe.equals("Maga"))
                 {System.out.println(nome+", parabens você subiu de nivel!!");
                 mana += 10;
@@ -114,7 +113,7 @@ public class Personagem{
                 forca += 2;
                 vida += 10;
                 nivel += 1;}
-            }
+        
         }
         public void mostrarStatus(){
             System.out.println
