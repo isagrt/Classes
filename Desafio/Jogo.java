@@ -22,17 +22,21 @@ public class Jogo{
        System.out.println(
     "Contextualizando..." +
     "\n" +
-    "Apos uma guerra nuclear, a humanidade caiu.\n" +
-    "Animais evoluidos ergueram reinos e magia.\n" +
-    "Num novo mundo medieval, guerreiros peludos\n" +
-    "lutam por gloria... ou repetem os mesmos erros.\n" +
+    "Num mundo medieval pos-nuclear, gatos e outros animais\n" +
+    "evoluidos disputam reinos com magia e espada.\n" +
     "\n" +
-    "Entre os mais poderosos, duas gatas se destacam:\n" +
-    "Rita, a guerreira roqueira, e Narcisa, a maga sombria.\n" +
-    "Irmãs de sangue, separadas por ideais opostos,\n" +
-    "elas carregam uma antiga rixa de família que agora\n" +
-    "explodirá em um duelo que definirá o destino do reino.\n"
+    "Rita, a guerreira roqueira, e Narcisa, a maga sombria,\n" +
+    "sao irmas marcadas por uma antiga rixa de familia.\n" +
+    "Agora, o duelo entre elas vai decidir o destino do reino.\n" +
+    "\n" +
+    "--------- REGRAS ---------\n" +
+    "- Turnos alternados;\n" +
+    "- Escolhas invalidas = perde a vez;\n" +
+    "- Magos usam mana;\n" +
+    "- Guerreiros tem mais forca;\n" +
+    "---------------------------\n"
 );
+
 
 
         System.out.println("");
