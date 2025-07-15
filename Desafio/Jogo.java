@@ -19,21 +19,21 @@ public class Jogo{
         rita.definirStatusInicial();
         rita.Separador();
 
-        System.out.println(
-    "==============================================\n" +
-    "                   WAR CAT             \n" +
-    "==============================================\n" +
-    "Apos uma guerra nuclear, a humanidade foi dizimada.\n" +
-    "A Terra mergulhou em silencio por seculos...\n\n" +
-    "Dos escombros, os animais evoluiram, aprenderam a falar,\n" +
-    "andar sobre duas patas e construir novas sociedades.\n\n" +
-    "Inspirados na civilizacao humana, criaram um mundo\n" +
-    "medieval, repleto de magia, reinos e batalhas epicas.\n\n" +
-    "Lobos nobres, gatos cavaleiros, corujas sabias\n" +
-    "e outros seres agora escrevem a nova historia da Terra...\n" +
-    "Talvez repetindo os erros dos antigos senhores.\n" +
-    "=============================================="
+       System.out.println(
+    "Contextualizando..." +
+    "\n" +
+    "Apos uma guerra nuclear, a humanidade caiu.\n" +
+    "Animais evoluidos ergueram reinos e magia.\n" +
+    "Num novo mundo medieval, guerreiros peludos\n" +
+    "lutam por gloria... ou repetem os mesmos erros.\n" +
+    "\n" +
+    "Entre os mais poderosos, duas gatas se destacam:\n" +
+    "Rita, a guerreira roqueira, e Narcisa, a maga sombria.\n" +
+    "Irmãs de sangue, separadas por ideais opostos,\n" +
+    "elas carregam uma antiga rixa de família que agora\n" +
+    "explodirá em um duelo que definirá o destino do reino.\n"
 );
+
 
         System.out.println("");
         

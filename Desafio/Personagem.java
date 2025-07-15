@@ -10,7 +10,7 @@ public class Personagem{
         public int forca;
 
         public void Separador(){
-            System.out.println("------------------------------");
+            System.out.println("\n:.:.:.:.:.::.:.:.:.:.::.:.:.:.:.::.:.:.:.:.:\n");
         }
         public void narcisaCorpo(){
             
@@ -48,24 +48,27 @@ public class Personagem{
         System.out.println(">> CONFIGURACAO DA PERSONAGEM "+nome.toUpperCase()+":");
         System.out.print("Defina o nivel de forca para " + nome + "\nLEMBRETE!! " +nome + " eh uma " +classe.toLowerCase()+ ": ");
         forca = scanner.nextInt();
-
+        //definindo mana só para magos
+        if (classe.equals("Maga")){    
         System.out.print("Defina o nivel de mana para " + nome + "\nLEMBRETE!! " +nome + " eh uma " +classe.toLowerCase()+ ": ");
-        mana = scanner.nextInt();
-
-        System.out.println("Status definidos! Forca: " + forca + " | Mana: " + mana);
+        mana = scanner.nextInt();   
+        System.out.println("Status definidos! Forca: " + forca + " | Mana: " + mana);}
+        else if(classe.equals("Guerreira")){
+            System.out.println("Status definidos! Forca: " + forca);
+        }return;
         }
 
 
         public void ataque(){
             forca += 2;
             mana += 2;
-            System.out.println(nome+" utiliza seu cajado magico para atacar "+oponente);
+            System.out.println(nome+" ataca "+oponente+" sem do nenhuma!!");
             System.out.println("+1 de forca!! Forca atual : "+forca);
         }
         public void receberDano(int dano){
             vida -= dano;
             if(vida > 0){
-                System.out.println(nome+" tenta desviar do golpe de guitarra de "+oponente+" e infelizmente não consegue :(  ");
+                System.out.println(nome+" tenta desviar do golpe de "+oponente+" e infelizmente não consegue :(  ");
                 System.out.println("+5 de dano :( Vida atual : "+vida);
             }
             else{
@@ -87,9 +90,9 @@ public class Personagem{
 
         }
         public void usarHabilidade(){
-            forca += 4; 
-            mana -= 4;
+            forca += 4;             
             if (classe.equals("Maga")){
+                mana -= 4;
                 System.out.println(nome+" lanca sua magia negra para atacar"+oponente);
                 System.out.println("+2 de forca!! Forca atual: "+forca);
             }else if(classe.equals("Guerreira")){
@@ -100,7 +103,7 @@ public class Personagem{
             
         }
         public void subirDeNivel(){
-            if(mana == 75 && forca == 50){
+            if(forca == 60){
                 System.out.println(nome+", parabens você subiu de nivel!!");
                 mana += 10;
                 forca += 2;
