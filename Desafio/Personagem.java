@@ -89,8 +89,15 @@ public class Personagem{
         public void usarHabilidade(){
             forca += 4; 
             mana -= 4;
-            System.out.println(nome+" lanca sua magia negra para atacar"+oponente);
-            System.out.println("+2 de forca!! Forca atual: "+forca);
+            if (classe.equals("Maga")){
+                System.out.println(nome+" lanca sua magia negra para atacar"+oponente);
+                System.out.println("+2 de forca!! Forca atual: "+forca);
+            }else if(classe.equals("Guerreira")){
+                System.out.println(nome+" utiliza sua guitarra para atacar "+oponente);
+                System.out.println("+2 de forca!! Forca atual: "+forca);
+            }
+            
+            
         }
         public void subirDeNivel(){
             if(mana == 75 && forca == 50){
@@ -103,7 +110,7 @@ public class Personagem{
         }
         public void mostrarStatus(){
             System.out.println
-            ("Nome: "+nome+" | Classe: Mago | Vida: "+vida+" | Forca: "+forca+" | Mana: "+mana);
+            ("Nome: "+nome+" | Classe: " +classe+ " | Vida: "+vida+" | Forca: "+forca+" | Mana: "+mana);
         }
 
 }

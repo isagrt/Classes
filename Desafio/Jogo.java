@@ -14,7 +14,7 @@ public class Jogo{
 
         Personagem rita = new Personagem();
         rita.nome = "Rita";
-        rita.classe ="Gurreira";
+        rita.classe ="Guerreira";
         rita.oponente="Narcisa";
         rita.definirStatusInicial();
         rita.Separador();
