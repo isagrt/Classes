@@ -50,12 +50,12 @@ public class Jogo{
         switch (escolhaCisa) {
             case 1:
                 narcisa.ataque();
-                rita.receberDano();
+                rita.receberDano(2);
                 narcisa.mostrarStatus();
                 break;
             case 2:
                 narcisa.usarHabilidade();
-                rita.receberDanoEspecial();
+                rita.receberDanoEspecial(10);
                 narcisa.mostrarStatus();
                 break;
             case 3:
@@ -70,7 +70,8 @@ public class Jogo{
     if (rita.vida <= 0) break;
 
     narcisa.Separador();
-
+        
+        rita.ritaCorpo();
         System.out.println("Vez de " + rita.nome + ":");
         System.out.println("1 - Arranhar com garras");
         System.out.println("2 - Usar Guitarra magica");
@@ -81,12 +82,12 @@ public class Jogo{
         switch (escolhaR) {
             case 1:
                 rita.ataque();
-                narcisa.receberDano();
+                narcisa.receberDano(2);
                 rita.mostrarStatus();
                 break;
             case 2:
                 rita.usarHabilidade();
-                narcisa.receberDanoEspecial();
+                narcisa.receberDanoEspecial(10);
                 rita.mostrarStatus();
                 break;
             case 3:

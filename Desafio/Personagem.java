@@ -16,9 +16,9 @@ public class Personagem{
             
            System.out.println("          X                                           ");
         System.out.println("         / \\                                          ");
-        System.out.println("        /\\_/\\                   >> Narcisa uma gata maga,                     ");
-        System.out.println("     »( o.o )«                pronta para o ataque de seus inimigos                  ");
-        System.out.println("        > - <   oo              mais crueis!                   ");
+        System.out.println("        /\\_/\\                                        ");
+        System.out.println("     »( o.o )«                                  ");
+        System.out.println("        > - <   oo                               ");
         System.out.println("       (  *  ) o                                     ");
         System.out.println("        \\ | /oo                                     ");
         System.out.println("         O O                                         ");
@@ -30,14 +30,14 @@ public class Personagem{
         public void ritaCorpo(){
             
                   System.out.println(
-    "                                           :&:\n" +
-    "                                   /\\_/\\    #\n" +
-    "                                 »( o.o )«O #\n" +
-    "                                   > - < O _#_\n" +
-    "                                  (     )O( # )\n" +
-    "                                   \\ │ /O / O \\\n" +
-    "                                    O O  ( === )\n" +
-    "                                          `---'\n"
+    "                :&:\n" +
+    "        /\\_/\\    #\n"   +
+    "     »( o.o )« #\n"       +
+    "        > - < O _#_\n" +
+    "       (     )O( # )\n" +
+    "        \\ | /O / O \\\n" +
+    "         O O  ( === )\n" +
+    "               `---'\n"
 );                         
                                                                                                       
         }
@@ -62,10 +62,9 @@ public class Personagem{
             System.out.println(nome+" utiliza seu cajado magico para atacar "+oponente);
             System.out.println("+1 de forca!! Forca atual : "+forca);
         }
-        public void receberDano(){
-            
+        public void receberDano(int dano){
+            vida -= dano;
             if(vida > 0){
-                vida -= 2;
                 System.out.println(nome+" tenta desviar do golpe de guitarra de "+oponente+" e infelizmente não consegue :(  ");
                 System.out.println("+5 de dano :( Vida atual : "+vida);
             }
@@ -75,9 +74,9 @@ public class Personagem{
 
 
         }
-        public void receberDanoEspecial(){
+        public void receberDanoEspecial(int dano){
+            vida -= dano;
             if(vida > 0 ){
-                vida -= 10;
                 System.out.println(nome+" tenta desviar do golpe de "+oponente+" e infelizmente não consegue :(  ");
                 System.out.println("+10 de dano :( Vida atual : "+vida);
             }
