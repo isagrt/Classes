@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Jogo{
+public class JogoPOO{
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         //DEFININDO PARAMETROS PARA A PRIMEIRA PERSONAGEM
