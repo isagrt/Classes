@@ -27,20 +27,7 @@ public class PersonagemPOO{
                                                                                                       
         }
 
-        public void ritaCorpo(){
-            
-                  System.out.println(
-    "                :&:\n" +
-    "        /\\_/\\    #\n"   +
-    "     »( o.o )« #\n"       +
-    "        > - < O _#_\n" +
-    "       (     )O( # )\n" +
-    "        \\ | /O / O \\\n" +
-    "         O O  ( === )\n" +
-    "               `---'\n"
-);                         
-                                                                                                      
-        }
+        
 
        
         public void definirStatusInicial() {
@@ -73,8 +60,6 @@ public class PersonagemPOO{
             else{
                 System.out.println("Fim de jogo para"+nome+" :( Parabens "+oponente);
             }
-
-
         }
         public void receberDanoEspecial(int dano){
             vida -= dano;

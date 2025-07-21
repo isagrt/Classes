@@ -4,7 +4,7 @@ public class Jogo{
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         //DEFININDO PARAMETROS PARA A PRIMEIRA PERSONAGEM
-        PersonagemPOO narcisa = new PersonagemPOO();
+        Personagem narcisa = new Personagem();
         narcisa.nome = "Narcisa";
         narcisa.classe = "Maga";
         narcisa.oponente = "Rita";
@@ -12,7 +12,7 @@ public class Jogo{
         narcisa.mostrarStatus();
         narcisa.Separador();
 
-        PersonagemPOO rita = new PersonagemPOO();
+        Personagem rita = new Personagem();
         rita.nome = "Rita";
         rita.classe ="Guerreira";
         rita.oponente="Narcisa";
